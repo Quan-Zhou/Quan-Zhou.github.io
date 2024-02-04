@@ -21,7 +21,8 @@
 <div class="menu-item"><a href="https://github.com/Quan-Zhou">GitHub</a></div>
 <div class="menu-item"><a href="CV_QuanZhou.pdf">CV</a></div>
 </td>
-<td id="layout-content">
+<!-- <td id="layout-content">--> 
+<td style="WORD-BREAK: break-all; WORD-WRAP: break-word">
 <div id="toptitle">
 <h1>Quan Zhou </h1>
 </div>
@@ -79,48 +80,40 @@ I obtained MS in Operational Research from University of Edinburgh and BE in Ins
 </ol>
 <p><a href="https://arxiv.org/a/zhou_q_2.html">Full list of drafts in arXiv</a>.</p>
 <h2>Projects</h2>
-<p>My PhD started in February 2020, just as the COVID-19 pandemic began. Over these years, fairness has evolved into a major subfield of machine learning.<br/>
-Looking ahead, fairness will become even more important in the coming years, following the political instability and economic crisis, triggered by the <br/>
-COVID-19 pandemic. Recovery from the pandemic is anticipated to be as uneven as its initial economic impacts. Disadvantaged populations and regions are <br/>
-likely to face an extended path to recover from the pandemic-induced losses of livelihoods, thereby exacerbating pre-existing inequalities and poverty.
+<p>My PhD started in February 2020, just as the COVID-19 pandemic began. Over these years, fairness has evolved into a major subfield of machine learning.
+Looking ahead, fairness will become even more important in the coming years, following the political instability and economic crisis, triggered by the COVID-19 pandemic. 
+Recovery from the pandemic is anticipated to be as uneven as its initial economic impacts. Disadvantaged populations and regions are likely to face an extended path to recover from the pandemic-induced losses of livelihoods, thereby exacerbating pre-existing inequalities and poverty.
 </p>
 <p>I have focused on the following projects during my PhD.</p>
 <ul>
 <li><p><b>Operator-Valued Polynomial Optimization to System Identification</b>, 06.2019-02.2023</p></li>
-<p>Due to historical and systematic discrimination, real-world data are prevalently imbalanced, with certain groups outnumbering others. When training <br/>
-machine learning models (iteratively minimizing a loss function) without any fairness considerations, the models' outputs will be closer and more accurate <br/>
-for the majority group. This is simply because the majority group holds a larger share in terms of the value of the loss function.
+<p>Due to historical and systematic discrimination, real-world data are prevalently imbalanced, with certain groups outnumbering others. When training machine learning models (iteratively minimizing a loss function) without any fairness considerations, the models' outputs will be closer and more accurate for the majority group. 
+This is simply because the majority group holds a larger share in terms of the value of the loss function.
 </p>
-<p>This project focus on applications of non-commutative polynomial optimization (NCPOP) (Pironio et al., 2010) and its sparsity-exploit variant (Wang et al., 2021),<br/>
-to address the problem of learning from imbalanced data. The fact that the variables in NCPOP are operator-valued, enable us to recover the system matrices of linear<br/>
-dynamic systems (or state-space models) without assumptions about the dimensions of hidden dynamics, when applied to system identification. It also accommodates<br/>
-polynomial-like fairness regularizers or shape constraints with global optimality guarantees, when applied to machine learning fairness.<br/>
-This project has achieved one paper in IEEE Transactions on Automatic Control, one paper in Journal of Artificial Intelligence Research and one paper<br/>
-in AAAI Conference on Artificial Intelligence.
+<p>This project focus on applications of non-commutative polynomial optimization (NCPOP) (Pironio et al., 2010) and its sparsity-exploit variant (Wang et al., 2021),
+to address the problem of learning from imbalanced data. The fact that the variables in NCPOP are operator-valued, enable us to recover the system matrices of linear dynamic systems (or state-space models) without assumptions about the dimensions of hidden dynamics, when applied to system identification. 
+It also accommodates polynomial-like fairness regularizers or shape constraints with global optimality guarantees, when applied to machine learning fairness.
+This project has achieved one paper in IEEE Transactions on Automatic Control, one paper in Journal of Artificial Intelligence Research and one paper in AAAI Conference on Artificial Intelligence.
 </p>
 <li><p><b>Group-Blind Projections to Group Parity in Scenarios of Two Groups</b>, 02.2023-10.2023</p></li>
-<p>Consider two groups: a privileged one and an unprivileged one, where unprivileged students may outperform privileged students with similar scores, due to facing greater challenges.<br/> 
-Schools commonly use exam scores to make admission decisions with a cutoff point: students with scores higher than the cutoff point will be admitted.<br/>
-In Figure~1, this is shown with the vertical dashed line.<br/> 
-The left subplot shows that the score distribution of the privileged group (denoted by a purple curve) concentrates somewhere above the cut-off point.<br/>
-On the contrary, only a small portion of the unprivileged group (denoted by an orange curve) passes the cut-off point.<br/>
-If the cutoff point is used in a straightforward manner, the admission results are strongly biased against the unprivileged group,<br/>
-although the admission-decision algorithm does not take into account the sensitive attribute.
+<p>Consider two groups: a privileged one and an unprivileged one, where unprivileged students may outperform privileged students with similar scores, due to facing greater challenges. 
+Schools commonly use exam scores to make admission decisions with a cutoff point: students with scores higher than the cutoff point will be admitted.
+In Figurg 1, this is shown with the vertical dashed line.
+The left subplot shows that the score distribution of the privileged group (denoted by a purple curve) concentrates somewhere above the cut-off point.
+On the contrary, only a small portion of the unprivileged group (denoted by an orange curve) passes the cut-off point.
+If the cutoff point is used in a straightforward manner, the admission results are strongly biased against the unprivileged group, although the admission-decision algorithm does not take into account the sensitive attribute.
 </p>
-<p>This project aims to address how to achieve equalized admission rates for both groups without knowledge of students' backgrounds<br/>
-(whether they are from the privileged group or not). Instead of training another fairness-aware admission-decision model, the bias repair<br/>
-schemes that we proposed will project the score distributions of both groups into an arbitrary target distribution, for example, the green curve,<br/>
-such that the scores of both groups follow the same target distribution. 
+<p>This project aims to address how to achieve equalized admission rates for both groups without knowledge of students' backgrounds (whether they are from the privileged group or not). 
+Instead of training another fairness-aware admission-decision model, the bias repair schemes that we proposed will project the score distributions of both groups into an arbitrary target distribution, for example, the green curve, such that the scores of both groups follow the same target distribution. 
 </p>
-<p>The right subplots of Figure~1 illustrate the effects of bias-repair schemes proposed in this project, with the top two for "partial repair",<br/>
-and the bottom one for "total repair". Now, the same admission cut-off point used on the projected scores will achieve equalised admission rates between<br/>
-the privileged and the unprivileged group. The contribution of this project is eliminating the need for the sensitive attribute of each sample<br/>
-when computing the group-blind projection map and projecting both groups via this map.
+<p>The right subplots of Figure~1 illustrate the effects of bias-repair schemes proposed in this project, with the top two for "partial repair", and the bottom one for "total repair". 
+Now, the same admission cut-off point used on the projected scores will achieve equalised admission rates between the privileged and the unprivileged group. 
+The contribution of this project is eliminating the need for the sensitive attribute of each sample when computing the group-blind projection map and projecting both groups via this map.
 </p>
 <figure>
 <style>
 .custom-figure {
-width: 100px; /* Set the desired width */
+width: 50px; /* Set the desired width */
 height: auto; /* Maintain aspect ratio by setting height to auto */
 }
 </style>
