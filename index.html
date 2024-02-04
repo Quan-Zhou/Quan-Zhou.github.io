@@ -96,33 +96,9 @@ This project has achieved one paper in IEEE Transactions on Automatic Control, o
 </p>
 <li><p><b>Group-Blind Projections to Group Parity in Scenarios of Two Groups</b>, 02.2023-10.2023</p></li>
 <p>Consider two groups: a privileged one and an unprivileged one, where unprivileged students may outperform privileged students with similar scores, due to facing greater challenges. 
-Schools commonly use exam scores to make admission decisions with a cutoff point: students with scores higher than the cutoff point will be admitted.
-In Figurg 1, this is shown with the vertical dashed line.
-The left subplot shows that the score distribution of the privileged group (denoted by a purple curve) concentrates somewhere above the cut-off point.
-On the contrary, only a small portion of the unprivileged group (denoted by an orange curve) passes the cut-off point.
-If the cutoff point is used in a straightforward manner, the admission results are strongly biased against the unprivileged group, although the admission-decision algorithm does not take into account the sensitive attribute.
+Relying solely on scores for admission decisions without considering students' backgrounds in this scenario could lead to excluding strongly biased results against the unprivileged group, although the admission-decision algorithm does not take into account the sensitive attribute.
 </p>
-<p>This project aims to address how to achieve equalized admission rates for both groups without knowledge of students' backgrounds (whether they are from the privileged group or not). 
-Instead of training another fairness-aware admission-decision model, the bias repair schemes that we proposed will project the score distributions of both groups into an arbitrary target distribution, for example, the green curve, such that the scores of both groups follow the same target distribution. 
-</p>
-<p>The right subplots of Figure~1 illustrate the effects of bias-repair schemes proposed in this project, with the top two for "partial repair", and the bottom one for "total repair". 
-Now, the same admission cut-off point used on the projected scores will achieve equalised admission rates between the privileged and the unprivileged group. 
-The contribution of this project is eliminating the need for the sensitive attribute of each sample when computing the group-blind projection map and projecting both groups via this map.
-</p>
-<figure>
-<style>
-.custom-figure {
-width: 5px; /* Set the desired width */
-height: auto; /* Maintain aspect ratio by setting height to auto */
-}
-</style>
-<img src="motivation_example_ot.png" alt="motivation_example_ot">
-<figcaption>Figure 1 <b>Left:</b> A cut-off point (vertical dark line) for an exam score is used to make school-admission decisions. With the hypothetical exam-score distributions of the unprivileged group (orange) and the privileged group (purple), this group-blind cut-off point would result in outcomes biased against the unprivileged group. 
-If the score distributions of unprivileged group and the privileged group are projected closer to an arbitrary target distribution (green), the same cut-off point can achieve equalised admission rates.
-<b>Right:</b> The partial repair (top two) and total repair (bottom) schemes proposed, move the score distributions of unprivileged group (orange) and the privileged group (purple) closer to the pre-defined target distribution, without access to the sensitive attribute of each sample in training process.</figcaption>
-</figure>
-<p>These repair schemes, involves formulating a map that projects two distinct datasets into similar datasets without access to the membership of each datapoint,<br/>
-are transformed into a convex program, and then solved via generalized optimal transport. This project has achieved one paper, under review at Journal of Machine Learning Research.
+</p>This project aims to achieve equalized admission rates for two groups without knowledge of students' backgrounds. It involves mapping datasets without knowing individual data point memberships, transformed into a convex program, and solved using generalized optimal transport. The project has a paper currently under review at the Journal of Machine Learning Research.
 </p>
 </ul>
 <a href="CV_QuanZhou.pdf">A brief cv</a>.</p>
