@@ -58,26 +58,32 @@ I obtained MS in Operational Research from University of Edinburgh and BE in Ins
 <li><p>Learning of linear dynamical systems as a non-commutative polynomial optimization problem. IEEE Transactions on Automatic Control, 2023[<a href="https://ieeexplore.ieee.org/abstract/document/10244076">pdf</a>]
 <br/><font color="grey">Quan Zhou and Jakub Mareček. </font></p>
 </li>
-<li><p>Quan Zhou, Jakub Mareček, and Robert Shorten. Fairness in forecasting of observations of linear dynamical systems. Journal of Artificial Intelligence Research, 2023[<a href="https://www.jair.org/index.php/jair/article/view/14050">pdf</a>]</p>
+<li><p>Fairness in forecasting of observations of linear dynamical systems. Journal of Artificial Intelligence Research, 2023[<a href="https://www.jair.org/index.php/jair/article/view/14050">pdf</a>]
+<br/><font color="grey">Quan Zhou, Jakub Mareček, and Robert Shorten. </font></p>
 </li>
-<li><p>Quan Zhou, Jakub Mareček, and Robert N Shorten. Fairness in forecasting and learning linear dynamical systems. In Proceedings of the AAAI Conference on Artificial Intelligence, 2021[<a href="https://ojs.aaai.org/index.php/AAAI/article/view/17328">pdf</a>]</p>
+<li><p>Fairness in forecasting and learning linear dynamical systems. In Proceedings of the AAAI Conference on Artificial Intelligence, 2021[<a href="https://ojs.aaai.org/index.php/AAAI/article/view/17328">pdf</a>]
+<br/><font color="grey">Quan Zhou, Jakub Mareček, and Robert Shorten. </font></p>
 </li> 
-<li><p>Quan Zhou, Jakub Mareček, and Robert Shorten. Subgroup fairness in two-sided markets. Plos one, 2023[<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0281443">pdf</a>]</p>
+<li><p>Subgroup fairness in two-sided markets. Plos one, 2023[<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0281443">pdf</a>]
+<br/><font color="grey">Quan Zhou, Jakub Mareček, and Robert Shorten. </font></p>
 </li>
 </ol>
 <h3>Under review</h3>
 <ol>
-<li><p>Quan Zhou, Robert Shorten and Jakub Mareček. Group-blind optimal transport to group parity and its constrained variants.[<a href="https://arxiv.org/abs/2310.11407">arXiv</a>]</p>
+<li><p>Group-blind optimal transport to group parity and its constrained variants.[<a href="https://arxiv.org/abs/2310.11407">arXiv</a>]
+<br/><font color="grey">Quan Zhou, Robert Shorten and Jakub Mareček. </font></p>
 </li>
-<li><p>Mengjia Niu, Xiaoyu He, Petr Rysavy, Quan Zhou, and Jakub Mareček. Joint problems in learning multiple dynamical systems.[<a href="https://arxiv.org/abs/2311.02181">arXiv</a>]</p>
+<li><p>Joint problems in learning multiple dynamical systems.[<a href="https://arxiv.org/abs/2311.02181">arXiv</a>]
+<br/><font color="grey">Mengjia Niu, Xiaoyu He, Petr Rysavy, Quan Zhou, and Jakub Mareček. </font></p>
 </li>
 </ol>
 <p><a href="https://arxiv.org/a/zhou_q_2.html">Full list of drafts in arXiv</a>.</p>
 <h2>Projects</h2>
-<p>My PhD started in February 2020, just as the COVID-19 pandemic began. Over these years, fairness has evolved into a major subfield of machine learning.
-Looking ahead, fairness will become even more important in the coming years, following the political instability and economic crisis, triggered by the COVID-19 pandemic.
-Recovery from the pandemic is anticipated to be as uneven as its initial economic impacts.
-Disadvantaged populations and regions are likely to face an extended path to recover from the pandemic-induced losses of livelihoods, thereby exacerbating pre-existing inequalities and poverty. Since then, my focus has been on promoting fairness.</p>
+<p>My PhD started in February 2020, just as the COVID-19 pandemic began. Over these years, fairness has evolved into a major subfield of machine learning.<br/>
+Looking ahead, fairness will become even more important in the coming years, following the political instability and economic crisis, triggered by the COVID-19 pandemic.<br/>
+Recovery from the pandemic is anticipated to be as uneven as its initial economic impacts.<br/>
+Disadvantaged populations and regions are likely to face an extended path to recover from the pandemic-induced losses of livelihoods, thereby exacerbating pre-existing inequalities and poverty.
+</p>
 <p>I have focused on the following projects during my PhD.</p>
 <ul>
 <li><p>Operator-Valued Polynomial Optimization to System Identification, 06.2019-02.2023</p></li>
@@ -102,11 +108,16 @@ Now, the same admission cut-off point used on the projected scores will achieve 
 The contribution of this project is eliminating the need for the sensitive attribute of each sample when computing the group-blind projection map and projecting both groups via this map.
 </p>
 <figure>
-    <img src="motivation_example_ot.png"
-         alt="motivation_example_ot">
-    <figcaption>Figure 1 **Left:** A cut-off point (vertical dark line) for an exam score is used to make school-admission decisions. With the hypothetical exam-score distributions of the unprivileged group (orange) and the privileged group (purple), this group-blind cut-off point would result in outcomes biased against the unprivileged group. 
+<style>
+.custom-figure {
+width: 300px; /* Set the desired width */
+height: auto; /* Maintain aspect ratio by setting height to auto */
+}
+</style>
+<img src="motivation_example_ot.png" alt="motivation_example_ot">
+<figcaption>Figure 1 <b>Left:</b> A cut-off point (vertical dark line) for an exam score is used to make school-admission decisions. With the hypothetical exam-score distributions of the unprivileged group (orange) and the privileged group (purple), this group-blind cut-off point would result in outcomes biased against the unprivileged group. 
 If the score distributions of unprivileged group and the privileged group are projected closer to an arbitrary target distribution (green), the same cut-off point can achieve equalised admission rates.
-**Right:** The partial repair (top two) and total repair (bottom) schemes proposed, move the score distributions of unprivileged group (orange) and the privileged group (purple) closer to the pre-defined target distribution, without access to the sensitive attribute of each sample in training process.</figcaption>
+<b>Right:</b> The partial repair (top two) and total repair (bottom) schemes proposed, move the score distributions of unprivileged group (orange) and the privileged group (purple) closer to the pre-defined target distribution, without access to the sensitive attribute of each sample in training process.</figcaption>
 </figure>
 <p>These repair schemes, involves formulating a map that projects two distinct datasets into similar datasets without access to the membership of each datapoint, are transformed into a convex program, and then solved via generalized optimal transport.
 This project has achieved one paper, under review at Journal of Machine Learning Research.
